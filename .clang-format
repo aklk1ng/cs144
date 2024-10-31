@@ -1,23 +1,16 @@
----
 Language: Cpp
-BasedOnStyle: Mozilla
+BasedOnStyle: LLVM
 ColumnLimit: 116
-SpacesInParentheses: true
 AlwaysBreakAfterReturnType: None
 AlwaysBreakAfterDefinitionReturnType: None
-SpaceBeforeCpp11BracedList: true
 BreakBeforeBinaryOperators: All
-Cpp11BracedListStyle: true
 AllowShortBlocksOnASingleLine: Always
-BreakBeforeBraces: Custom
 BraceWrapping:
-  AfterClass: true
+  AfterClass: false
   AfterControlStatement: Never
   AfterFunction: true
-  AfterStruct: true
-  AfterEnum: true
-  SplitEmptyFunction: false
-  SplitEmptyRecord: false
-  SplitEmptyNamespace: false
-PackConstructorInitializers: NextLine
-...
+  AfterStruct: false
+  AfterEnum: false
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
