@@ -23,7 +23,14 @@ class ByteStream {
   protected:
     // Please add any additional state to the ByteStream here, and not to the Writer and Reader interfaces.
     uint64_t capacity_;
-    bool error_{};
+    std::string buffer;
+    bool r_close{false};
+    bool w_close{false};
+    uint64_t st_{0};
+    uint64_t end_{0};
+    uint64_t w_nbytes{0};
+    uint64_t r_nbytes{0};
+    bool error_{false};
 };
 
 class Writer : public ByteStream {
